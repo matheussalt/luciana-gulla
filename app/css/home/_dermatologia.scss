@@ -1,0 +1,19 @@
+.dermatologia-home {
+  width: 100%;
+  padding: 64px 0;
+  background-color: #fcfcfc;
+
+  .container a {
+    width: 100%;
+  }
+}
+
+.dermatologia-home-txt {
+  padding-bottom: 32px;
+
+  svg {
+    width: 30px;
+    margin-bottom: 8px;
+    fill: $pink;
+  }
+}

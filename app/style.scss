@@ -1,18 +1,99 @@
+@font-face {
+  font-family: 'Playlist';
+  src: url('../assets/fonts/playlist/');
+  src: url('../assets/fonts/playlist/playlist_script-webfont.woff')
+      format('woff'),
+    url('../assets/fonts/playlist/playlist_script-webfont.woff2')
+      format('woff2');
+}
+
+@import './animation';
+
+$grey: #707070;
+$pink: #c6a09a;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   outline: none;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+  color: $grey;
 }
 
-ul, ol, li {
+body {
+  font-size: 16px;
+}
+
+ul,
+ol,
+li {
   list-style: none;
+}
+
+p {
+  margin: 16px 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: $grey;
+}
+
+blockquote p {
+  font-family: 'Playlist';
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 16px;
+
+  svg {
+    width: 26px;
+    fill: $pink;
+    margin-right: 10px;
+  }
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: $pink;
 }
 
 a {
   text-decoration: none;
 }
 
+.container {
+  width: 90%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.cta {
+  display: inline-block;
+  padding: 8px 32px;
+  background-color: #3b3b3b;
+  border-radius: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  transition: 0.3s background-color ease-out;
+
+  &:hover {
+    background-color: $pink;
+  }
+}
+
 @import './css/header/header';
+@import './css/home/index';
+@import './css/sobre/index';
 @import './css/footer/footer';
