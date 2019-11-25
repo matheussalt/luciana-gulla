@@ -65,3 +65,46 @@
     margin: 32px 0;
   }
 }
+
+@media screen and (min-width: 600px) {
+  .sobre .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .sobre-img,
+  .sobre-txt {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .sobre {
+    padding: 128px 0 64px;
+  }
+
+  .sobre-txt {
+    width: 48%;
+
+    > *:not(.title) {
+      margin-left: 44px;
+    }
+
+    h4 {
+      margin-bottom: 32px;
+    }
+  }
+
+  .sobre-img {
+    picture {
+      margin-left: 64px;
+      margin-bottom: 64px;
+
+      &.animar::before {
+        opacity: 1;
+        transform: translate3d(-32px, 32px, 0);
+      }
+    }
+  }
+}

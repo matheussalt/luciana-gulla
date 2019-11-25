@@ -1,0 +1,55 @@
+.dermatologia-menu {
+  width: 100%;
+  margin-bottom: 32px;
+
+  svg {
+    fill: $pink;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    width: 50%;
+  }
+
+  .dermatologia-links {
+    display: none;
+
+    a {
+      display: block;
+      padding: 8px 0;
+      text-transform: uppercase;
+      transition: 0.3s color ease-out;
+
+      &.active,
+      &:hover {
+        color: $pink;
+      }
+    }
+  }
+
+  &.ativo .dermatologia-links {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .dermatologia-menu {
+    margin-bottom: 64px;
+
+    h2 {
+      margin-bottom: 16px;
+    }
+
+    .dermatologia-links {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .dermatologia-menu {
+    width: 280px;
+    margin-right: 64px;
+  }
+}

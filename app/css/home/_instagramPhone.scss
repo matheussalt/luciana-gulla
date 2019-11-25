@@ -1,0 +1,213 @@
+.midias-cel {
+  margin-bottom: 32px;
+  position: relative;
+
+  picture img {
+    width: 100%;
+  }
+
+  .instagram {
+    position: absolute;
+    top: 9%;
+    left: 8%;
+    width: 84%;
+    height: 78%;
+  }
+}
+
+.instagram-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.instagram-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+
+  > a {
+    width: 30%;
+    height: 30%;
+    padding: 5% 5% 5% 0;
+    box-sizing: content-box;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+
+  .instagram-buttons {
+    width: 70%;
+
+    strong {
+      font-weight: normal;
+      font-size: 100%;
+      color: #1e1e1e;
+    }
+
+    a {
+      width: 100%;
+      display: block;
+      padding: 2% 5%;
+      margin-top: 2%;
+      background-color: #3897ef;
+      color: #fff;
+      border-radius: 3px;
+      font-size: 70%;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
+
+.profile-data {
+  padding: 0 5%;
+
+  strong {
+    font-size: 80%;
+    color: #212121;
+  }
+
+  .bio {
+    color: #212121;
+    font-size: 60%;
+  }
+}
+
+.profile-number {
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  width: 100%;
+  margin: 5% 0 3%;
+  padding: 5% 0;
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3%;
+    width: 33%;
+
+    strong {
+      display: block;
+      color: #212121;
+      font-size: 50%;
+      text-align: center;
+    }
+
+    span {
+      display: block;
+      color: #b0b0b0;
+      font-size: 50%;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
+
+.posts {
+  width: 100%;
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    padding-bottom: 3%;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      width: 33.3%;
+      cursor: pointer;
+
+      &.ativo {
+        svg {
+          fill: #3897ef;
+        }
+      }
+
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: #b0b0b0;
+      }
+    }
+  }
+}
+
+.posts-feed {
+  width: 100%;
+
+  &.mode-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    picture {
+      position: relative;
+      width: 100%;
+      padding-top: 100%;
+      display: flex;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &.mode-feed {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: unset;
+
+    picture {
+      position: relative;
+      width: 100%;
+      padding-top: 100%;
+      display: flex;
+      margin-bottom: 3%;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .midias-cel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    transition: 0.3s top ease-out;
+
+    &:hover {
+      top: -32px;
+    }
+  }
+}

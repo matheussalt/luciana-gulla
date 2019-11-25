@@ -1,0 +1,172 @@
+.footer {
+  width: 100%;
+  padding: 64px 0 16px;
+  background-color: #fcfcfc;
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.dados-footer {
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  .dados {
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: $pink;
+        margin-right: 8px;
+      }
+
+      span {
+        flex: 1;
+        font-style: 14px;
+      }
+
+      &.social-footer {
+        margin-left: 24px;
+      }
+    }
+  }
+}
+
+.logo-footer {
+  width: calc(90vw - 20px);
+  height: calc(90vw - 20px);
+  max-width: 400px;
+  max-height: 400px;
+  position: relative;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $pink;
+  margin: 32px 0 64px 20px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 2px solid $pink;
+  }
+
+  img {
+    width: 80%;
+  }
+}
+
+@import './form';
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  margin: 32px 0 16px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #525252;
+    opacity: 0.8;
+    user-select: none;
+    pointer-events: none;
+    transition: 0.3s opacity ease-out;
+  }
+
+  &:hover::before {
+    opacity: 0;
+  }
+}
+
+.rodape {
+  width: 100%;
+  position: relative;
+
+  p {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 11px;
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .footer {
+    padding: 128px 0 32px;
+
+    .footer-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 32px;
+      margin-bottom: 64px;
+    }
+  }
+
+  .dados-footer {
+    h2 {
+      margin-left: 42px;
+    }
+
+    .dados li {
+      svg {
+        margin-right: 24px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      &.social-footer {
+        margin-left: 38px;
+
+        svg {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+
+  .logo-footer {
+    margin: 0;
+    max-width: 250px;
+    max-height: 250px;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .map {
+    margin-bottom: 32px;
+  }
+}

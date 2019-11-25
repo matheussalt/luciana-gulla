@@ -9,7 +9,4 @@
 get_header(); ?>
 
 
-// CONTATO :)
-
-
 <?php get_footer();

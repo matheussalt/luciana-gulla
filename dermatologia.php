@@ -22,13 +22,15 @@ get_header(); ?>
 
     <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
     <a class="dermato-item" href="<?=the_permalink()?>">
-      <img src="<?=catch_that_image(2)?>" alt="<?=the_title()?>" />
+      <picture>
+        <img src="<?=catch_that_image(2)?>" alt="<?=the_title()?>" />
+      </picture>
       <h2><?=the_title()?></h2>
     </a>
     <?php endwhile; ?>
   </div>
 
-  <svg width="48.357" height="56.5" viewBox="0 0 48.357 56.5">
+  <svg data-object=".2" width="48.357" height="56.5" viewBox="0 0 48.357 56.5">
     <use xlink:href="#marca"></use>
   </svg>
 </section>

@@ -1,0 +1,43 @@
+.clinica-home {
+  width: 100%;
+  display: grid;
+
+  picture {
+    display: flex;
+    position: relative;
+
+    @extend %fadeUp;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #c6a09a;
+      opacity: 0.6;
+      transition: 0.3s opacity ease-out;
+    }
+
+    &:hover::before {
+      opacity: 0.2;
+    }
+
+    img {
+      width: 100%;
+      height: 40vw;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .clinica-home {
+    grid-template-columns: repeat(3, 1fr);
+
+    picture img {
+      height: 24vw;
+    }
+  }
+}

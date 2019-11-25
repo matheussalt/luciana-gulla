@@ -1,0 +1,41 @@
+.wpcf7-form {
+  width: 100%;
+  max-width: 500px;
+
+  input:not([type='submit']),
+  textarea {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 8px;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid $grey;
+    color: $grey;
+  }
+
+  textarea {
+    height: 46px;
+  }
+
+  .cta {
+    border: 2px solid #3b3b3b;
+    color: $pink;
+    font-size: 10px;
+    padding: 8px 64px;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .wpcf7-form {
+    input:not([type='submit']),
+    textarea {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+  }
+}

@@ -27,22 +27,27 @@ window.open('<?=$linkpage?>', '_parent');
 <section class="dermatologia-inside">
   <div class="container">
     <aside class="dermatologia-menu">
+      <svg width="48.357" height="56.5" viewBox="0 0 48.357 56.5">
+        <use xlink:href="#marca"></use>
+      </svg>
       <h2>
         <? $parent_title = get_the_title($post->post_parent);
 					echo $parent_title; ?>
       </h2>
 
-      <?php $mypages = get_pages( array( 'child_of' => $pai, 'sort_order' => 'asc' ) ); 
+      <div class="dermatologia-links">
+        <?php $mypages = get_pages( array( 'child_of' => $pai, 'sort_order' => 'asc' ) ); 
         foreach( $mypages as $page ) { ?>
-      <a href="<?php echo get_page_link( $page->ID ); ?>" class="<? if (get_the_ID() == $page->ID) { echo "
-        active";}?>">
-        <?php echo $page->post_title; ?>
-      </a>
-      <? } ?>
+        <a href="<?php echo get_page_link( $page->ID ); ?>" class="<? if (get_the_ID() == $page->ID) { echo "
+          active";}?>">
+          <?php echo $page->post_title; ?>
+        </a>
+        <? } ?>
+      </div>
     </aside>
 
     <div class="dermatologia-content">
-      <h2 class="title"><?=the_title()?></h2>
+      <h2><?=the_title()?></h2>
 
       <?php /* The loop */ ?>
       <?php while ( have_posts() ) : the_post(); ?>
@@ -52,7 +57,7 @@ window.open('<?=$linkpage?>', '_parent');
     </div>
   </div>
 
-  <svg width="48.357" height="56.5" viewBox="0 0 48.357 56.5">
+  <svg data-object=".2" width="48.357" height="56.5" viewBox="0 0 48.357 56.5">
     <use xlink:href="#marca"></use>
   </svg>
 </section>

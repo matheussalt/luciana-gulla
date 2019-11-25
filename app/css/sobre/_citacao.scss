@@ -1,0 +1,21 @@
+.frase-sobre {
+  width: 100%;
+  padding: 32px 0;
+  background-color: #f7f7f7;
+
+  p {
+    text-align: center;
+    color: $pink;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .frase-sobre {
+    padding: 64px 0;
+
+    p {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+}

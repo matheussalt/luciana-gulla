@@ -75,7 +75,7 @@
   }(document, 'script', 'facebook-jssdk'));
   </script>
 
-  <header class="header">
+  <header class="header" data-animar>
     <div class="header-container">
       <a href="<?=site_url()?>">
         <img src="<?=get_template_directory_URI()?>/img/rsc/logotipo_horizontal.svg" alt="Logotipo Luciana Gulla" />
@@ -94,7 +94,7 @@
 
         <ul class="header-social">
           <li>
-            <a href="https://instagram.com" target="_blank">
+            <a href="https://instagram.com/dralucianagulla/" target="_blank">
               <svg width="32" height="32" viewBox="0 0 32 32">
                 <use xlink:href="#instagram"></use>
               </svg>
@@ -102,7 +102,7 @@
           </li>
 
           <li>
-            <a href="https://facebook.com" target="_blank">
+            <a href="https://facebook.com/dralucianagulla/" target="_blank">
               <svg width="32" height="32" viewBox="0 0 32 32">
                 <use xlink:href="#facebook"></use>
               </svg>
@@ -110,7 +110,7 @@
           </li>
 
           <li>
-            <a href="https://wa.me" target="_blank">
+            <a href="https://wa.me/+5516992411620" target="_blank">
               <svg width="32" height="32" viewBox="0 0 32 32">
                 <use xlink:href="#whatsapp"></use>
               </svg>

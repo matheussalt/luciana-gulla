@@ -60,27 +60,27 @@
               <use xlink:href="#pin"></use>
             </svg>
             <span>
-              <a href="https://goo.gl/maps/MTaLMHFfB415vpGe6" target="_blank">RUA HUMAITÁ, 2018 - CENTRO,
-                ARARAQUARA - Sp</a>
+              <a href="https://goo.gl/maps/MTaLMHFfB415vpGe6" target="_blank">Rua Humaitá, 2018 - centro,
+                Araraquara - SP</a>
             </span>
           </li>
 
           <li class="social-footer">
-            <a href="https://facebook.com" target="_blank">
-              <svg width="32" height="32" viewBox="0 0 32 32">
-                <use xlink:href="#facebook"></use>
-              </svg>
-            </a>
-
-            <a href="https://instagram.com" target="_blank">
+            <a href="https://instagram.com/dralucianagulla/" target="_blank">
               <svg width="32" height="32" viewBox="0 0 32 32">
                 <use xlink:href="#instagram"></use>
               </svg>
             </a>
 
-            <a href="https://youtube.com" target="_blank">
+            <a href="https://facebook.com/dralucianagulla/" target="_blank">
               <svg width="32" height="32" viewBox="0 0 32 32">
-                <use xlink:href="#youtube"></use>
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a>
+
+            <a href="https://wa.me/+5516992411620" target="_blank">
+              <svg width="32" height="32" viewBox="0 0 32 32">
+                <use xlink:href="#whatsapp"></use>
               </svg>
             </a>
           </li>
@@ -94,9 +94,11 @@
       <? echo do_shortcode('[contact-form-7 id="5" title="Form Footer"]'); ?>
     </div>
 
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.7316008548564!2d-48.1852085850543!3d-21.790646385590676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8f3deec6b9daf%3A0xf47475ea27ee6d05!2sR.%20Humait%C3%A1%2C%202018%2C%20Araraquara%20-%20SP%2C%2014801-360!5e0!3m2!1spt-BR!2sbr!4v1574269888042!5m2!1spt-BR!2sbr"
-      frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.7316008548564!2d-48.1852085850543!3d-21.790646385590676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8f3deec6b9daf%3A0xf47475ea27ee6d05!2sR.%20Humait%C3%A1%2C%202018%2C%20Araraquara%20-%20SP%2C%2014801-360!5e0!3m2!1spt-BR!2sbr!4v1574269888042!5m2!1spt-BR!2sbr"
+        frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
   </div>
 
   <div class="rodape">
@@ -109,6 +111,8 @@
     </a>
   </div>
 </footer>
+
+<div id="modal"></div>
 
 <div style="display: none;">
   <? include 'svg.php'; ?>

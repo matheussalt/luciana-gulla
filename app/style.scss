@@ -79,12 +79,13 @@ a {
 
 .cta {
   display: inline-block;
-  padding: 8px 32px;
+  padding: 16px 64px;
   background-color: #3b3b3b;
-  border-radius: 16px;
+  border-radius: 32px;
   color: #fff;
-  text-transform: uppercase;
   font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.05em;
   transition: 0.3s background-color ease-out;
 
@@ -93,7 +94,16 @@ a {
   }
 }
 
+@media screen and (min-width: 1050px) {
+  .title svg {
+    width: 34px;
+  }
+}
+
 @import './css/header/header';
 @import './css/home/index';
 @import './css/sobre/index';
+@import './css/dermatologia/index';
+@import './css/servicos/index';
 @import './css/footer/footer';
+@import './css/modal/index';

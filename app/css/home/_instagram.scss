@@ -1,0 +1,80 @@
+.midias-section {
+  width: 100%;
+  padding: 64px 0;
+  background-color: $pink;
+  overflow: hidden;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.midias-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  svg {
+    fill: #fff;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+.midias-insta {
+  margin-top: 32px;
+  padding: 16px;
+  width: 100%;
+  border: 1px solid #fff;
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    display: block;
+    width: 33.3%;
+    padding-top: 33.3%;
+    position: relative;
+    transition: 0.3s opacity ease-out;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .midias-section {
+    .container {
+      flex-direction: row;
+      justify-content: flex-end;
+      position: relative;
+    }
+  }
+
+  .midias-txt,
+  .midias-insta {
+    width: 33.3%;
+  }
+}
+
+@import './instagramPhone';

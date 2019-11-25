@@ -1,11 +1,60 @@
 .header-wrapper {
-  width: 200px;
-  height: 100vh;
-  transform: translate3d(-100%, 0, 0);
   position: fixed;
   top: 0;
   left: 0;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate3d(-100%, 0, 0);
   background-color: $pink;
+  transition: 0.7s transform ease-in-out;
+
+  &.ativo {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.menu li {
+  font-size: 20px;
+  text-align: center;
+
+  a {
+    color: #fff;
+    display: block;
+    padding: 4px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.open-search {
+  padding: 8px;
+  margin: 16px 0;
+  background-color: transparent;
+  border: none;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+  }
+}
+
+.header-social {
+  display: flex;
+
+  a {
+    padding: 8px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: #fff;
+    }
+  }
 }
 
 .menu-hamb {
@@ -23,6 +72,7 @@
     height: 3px;
     display: block;
     background-color: $grey;
+    transition: 0.7s width ease-out;
   }
 
   &::before,
@@ -33,10 +83,91 @@
     display: block;
     background-color: $grey;
     position: static;
+    transition: 0.7s transform ease-out;
   }
 
   &::after,
   span {
     margin-top: 4px;
+  }
+
+  &.ativo {
+    &::before {
+      transform: rotate(-45deg) translate3d(-4px, 6px, 0);
+    }
+
+    &::after {
+      transform: rotate(45deg) translate3d(-4px, -6px, 0);
+    }
+
+    span {
+      width: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .header-wrapper {
+    position: static;
+    top: unset;
+    left: unset;
+    height: auto;
+    width: auto;
+    transform: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .menu ul {
+    display: flex;
+
+    li {
+      font-size: 14px;
+
+      a {
+        padding: 16px;
+        color: $grey;
+        position: relative;
+
+        &:hover::before {
+          width: 80%;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          transform: translate3d(-50%, 0, 0);
+          height: 2px;
+          width: 0;
+          background-color: $pink;
+          transition: 0.3s width ease-out;
+        }
+      }
+
+      &.current-menu-item a::before {
+        width: 80%;
+      }
+    }
+  }
+
+  .open-search {
+    padding: 16px;
+    margin: 16px 32px;
+
+    svg {
+      fill: $grey;
+    }
+  }
+
+  .header-social a svg {
+    fill: $grey;
+  }
+
+  .menu-hamb {
+    display: none;
   }
 }

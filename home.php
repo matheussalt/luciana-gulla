@@ -9,15 +9,15 @@
 get_header(); ?>
 
 <section class="banner">
-  <svg class="first" width="48.357" height="56.5" viewBox="0 0 48.357 56.5">
+  <svg data-animar class="first" width="48.357" height="56.5" viewBox="0 0 48.357 56.5">
     <use xlink:href="#marca"></use>
   </svg>
 
   <div class="container">
-    <h1>Uma frase impactante sobre dermatologia</h1>
+    <h1 data-animar>SUA PELE É ÚNICA E MERECE O QUE HÁ DE MELHOR.</h1>
   </div>
 
-  <svg class="second" width="48.357" height="56.5" viewBox="0 0 48.357 56.5">
+  <svg data-animar class="second" width="48.357" height="56.5" viewBox="0 0 48.357 56.5">
     <use xlink:href="#marca"></use>
   </svg>
 </section>
@@ -66,7 +66,7 @@ get_header(); ?>
 
 <section class="dermatologia-home">
   <div class="container">
-    <div class="dermatologia-home-txt">
+    <div data-animar class="dermatologia-home-txt">
       <svg width="48.357" height="56.5" viewBox="0 0 48.357 56.5">
         <use xlink:href="#marca"></use>
       </svg>
@@ -74,92 +74,93 @@ get_header(); ?>
       <h2>AS PRINCIPAIS QUEIXAS DERMATOLÓGICAS</h2>
     </div>
 
-    <a href="<?=site_url()?>/dermatologia-clinica/acne">
+    <a data-animar href="<?=site_url()?>/dermatologia/dermatologia-clinica/acne">
       <picture>
-        <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica1.webp" type="image/webp"
+        <source srcset="<?=get_template_directory_URI()?>/img/webp/acne.webp" type="image/webp"
           media="(max-width: 600px)" />
-        <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica1.jpg" type="image/jpg"
+        <source srcset="<?=get_template_directory_URI()?>/img/rsc/acne.jpg" type="image/jpg"
           media="(max-width: 600px)" />
-        <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica1@2x.webp" type="image/webp" />
-        <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica1@2x.jpg" type="image/jpg" />
-        <img src="<?=get_template_directory_URI()?>/img/rsc/clinica1@2x.jpg" alt="Clínica Luciana Gulla" />
+        <source srcset="<?=get_template_directory_URI()?>/img/webp/acne@2x.webp" type="image/webp" />
+        <source srcset="<?=get_template_directory_URI()?>/img/rsc/acne@2x.jpg" type="image/jpg" />
+        <img src="<?=get_template_directory_URI()?>/img/rsc/acne@2x.jpg" alt="Acne" />
       </picture>
       <strong>Acne na mulher adulta</strong>
     </a>
 
-    <a href="<?=site_url()?>/dermatologia-clinica/acne">
+    <a data-animar href="<?=site_url()?>/dermatologia/dermatologia-clinica/melasma/">
       <picture>
-        <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica1.webp" type="image/webp"
+        <source srcset="<?=get_template_directory_URI()?>/img/webp/melasma.webp" type="image/webp"
           media="(max-width: 600px)" />
-        <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica1.jpg" type="image/jpg"
+        <source srcset="<?=get_template_directory_URI()?>/img/rsc/melasma.jpg" type="image/jpg"
           media="(max-width: 600px)" />
-        <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica1@2x.webp" type="image/webp" />
-        <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica1@2x.jpg" type="image/jpg" />
-        <img src="<?=get_template_directory_URI()?>/img/rsc/clinica1@2x.jpg" alt="Clínica Luciana Gulla" />
+        <source srcset="<?=get_template_directory_URI()?>/img/webp/melasma@2x.webp" type="image/webp" />
+        <source srcset="<?=get_template_directory_URI()?>/img/rsc/melasma@2x.jpg" type="image/jpg" />
+        <img src="<?=get_template_directory_URI()?>/img/rsc/melasma@2x.jpg" alt="Melasma" />
       </picture>
-      <strong>Acne na mulher adulta</strong>
+      <strong>Melasma</strong>
     </a>
 
-    <a href="<?=site_url()?>/dermatologia-clinica/acne">
+    <a data-animar href="<?=site_url()?>/dermatologia/dermatologia-clinica/queda-de-cabelo-alopecia/">
       <picture>
-        <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica1.webp" type="image/webp"
+        <source srcset="<?=get_template_directory_URI()?>/img/webp/cabelo.webp" type="image/webp"
           media="(max-width: 600px)" />
-        <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica1.jpg" type="image/jpg"
+        <source srcset="<?=get_template_directory_URI()?>/img/rsc/cabelo.jpg" type="image/jpg"
           media="(max-width: 600px)" />
-        <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica1@2x.webp" type="image/webp" />
-        <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica1@2x.jpg" type="image/jpg" />
-        <img src="<?=get_template_directory_URI()?>/img/rsc/clinica1@2x.jpg" alt="Clínica Luciana Gulla" />
+        <source srcset="<?=get_template_directory_URI()?>/img/webp/cabelo@2x.webp" type="image/webp" />
+        <source srcset="<?=get_template_directory_URI()?>/img/rsc/cabelo@2x.jpg" type="image/jpg" />
+        <img src="<?=get_template_directory_URI()?>/img/rsc/cabelo@2x.jpg" alt="Queda de
+cabelo" />
       </picture>
-      <strong>Acne na mulher adulta</strong>
+      <strong>Queda de cabelo</strong>
     </a>
 
-    <a href="<?=site_url()?>/dermatologia-clinica/acne">
+    <a data-animar href="<?=site_url()?>/dermatologia/dermatologia-cosmiatrica/luz-intensa-pulsada/">
       <picture>
-        <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica1.webp" type="image/webp"
+        <source srcset="<?=get_template_directory_URI()?>/img/webp/vasinhos.webp" type="image/webp"
           media="(max-width: 600px)" />
-        <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica1.jpg" type="image/jpg"
+        <source srcset="<?=get_template_directory_URI()?>/img/rsc/vasinhos.jpg" type="image/jpg"
           media="(max-width: 600px)" />
-        <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica1@2x.webp" type="image/webp" />
-        <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica1@2x.jpg" type="image/jpg" />
-        <img src="<?=get_template_directory_URI()?>/img/rsc/clinica1@2x.jpg" alt="Clínica Luciana Gulla" />
+        <source srcset="<?=get_template_directory_URI()?>/img/webp/vasinhos@2x.webp" type="image/webp" />
+        <source srcset="<?=get_template_directory_URI()?>/img/rsc/vasinhos@2x.jpg" type="image/jpg" />
+        <img src="<?=get_template_directory_URI()?>/img/rsc/vasinhos@2x.jpg" alt="Vasinhos sanguíneos aparentes" />
       </picture>
-      <strong>Acne na mulher adulta</strong>
+      <strong>Vasinhos sanguíneos aparentes</strong>
     </a>
 
-    <a href="<?=site_url()?>/dermatologia-clinica/acne">
+    <a data-animar href="<?=site_url()?>/dermatologia/dermatologia-cosmiatrica/peeling-quimico/">
       <picture>
-        <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica1.webp" type="image/webp"
+        <source srcset="<?=get_template_directory_URI()?>/img/webp/estrias.webp" type="image/webp"
           media="(max-width: 600px)" />
-        <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica1.jpg" type="image/jpg"
+        <source srcset="<?=get_template_directory_URI()?>/img/rsc/estrias.jpg" type="image/jpg"
           media="(max-width: 600px)" />
-        <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica1@2x.webp" type="image/webp" />
-        <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica1@2x.jpg" type="image/jpg" />
-        <img src="<?=get_template_directory_URI()?>/img/rsc/clinica1@2x.jpg" alt="Clínica Luciana Gulla" />
+        <source srcset="<?=get_template_directory_URI()?>/img/webp/estrias@2x.webp" type="image/webp" />
+        <source srcset="<?=get_template_directory_URI()?>/img/rsc/estrias@2x.jpg" type="image/jpg" />
+        <img src="<?=get_template_directory_URI()?>/img/rsc/estrias@2x.jpg" alt="Estrias" />
       </picture>
-      <strong>Acne na mulher adulta</strong>
+      <strong>Estrias</strong>
     </a>
 
-    <a href="<?=site_url()?>/dermatologia-clinica/acne">
+    <a data-animar href="<?=site_url()?>/dermatologia/dermatologia-clinica/rosacea/">
       <picture>
-        <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica1.webp" type="image/webp"
+        <source srcset="<?=get_template_directory_URI()?>/img/webp/rosacea.webp" type="image/webp"
           media="(max-width: 600px)" />
-        <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica1.jpg" type="image/jpg"
+        <source srcset="<?=get_template_directory_URI()?>/img/rsc/rosacea.jpg" type="image/jpg"
           media="(max-width: 600px)" />
-        <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica1@2x.webp" type="image/webp" />
-        <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica1@2x.jpg" type="image/jpg" />
-        <img src="<?=get_template_directory_URI()?>/img/rsc/clinica1@2x.jpg" alt="Clínica Luciana Gulla" />
+        <source srcset="<?=get_template_directory_URI()?>/img/webp/rosacea@2x.webp" type="image/webp" />
+        <source srcset="<?=get_template_directory_URI()?>/img/rsc/rosacea@2x.jpg" type="image/jpg" />
+        <img src="<?=get_template_directory_URI()?>/img/rsc/rosacea@2x.jpg" alt="Rosácea" />
       </picture>
-      <strong>Acne na mulher adulta</strong>
+      <strong>Rosácea</strong>
     </a>
   </div>
 
-  <svg width="48.357" height="56.5" viewBox="0 0 48.357 56.5">
+  <svg data-object=".2" width="48.357" height="56.5" viewBox="0 0 48.357 56.5">
     <use xlink:href="#marca"></use>
   </svg>
 </section>
 
 <section class="clinica-home">
-  <picture>
+  <picture data-animar>
     <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica1.webp" type="image/webp"
       media="(max-width: 600px)" />
     <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica1.jpg" type="image/jpg"
@@ -169,7 +170,7 @@ get_header(); ?>
     <img src="<?=get_template_directory_URI()?>/img/rsc/clinica1@2x.jpg" alt="Clínica Luciana Gulla" />
   </picture>
 
-  <picture>
+  <picture data-animar>
     <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica2.webp" type="image/webp"
       media="(max-width: 600px)" />
     <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica2.jpg" type="image/jpg"
@@ -179,7 +180,7 @@ get_header(); ?>
     <img src="<?=get_template_directory_URI()?>/img/rsc/clinica2@2x.jpg" alt="Clínica Luciana Gulla" />
   </picture>
 
-  <picture>
+  <picture data-animar>
     <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica3.webp" type="image/webp"
       media="(max-width: 600px)" />
     <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica3.jpg" type="image/jpg"
@@ -192,14 +193,14 @@ get_header(); ?>
 
 <section class="tecnicas-home">
   <div class="container">
-    <svg width="48.357" height="56.5" viewBox="0 0 48.357 56.5">
+    <svg data-animar width="48.357" height="56.5" viewBox="0 0 48.357 56.5">
       <use xlink:href="#marca"></use>
     </svg>
-    <h2>TÉCNICAS MODERNAS E TECNOLOGIAS DE
+    <h2 data-animar>TÉCNICAS MODERNAS E TECNOLOGIAS DE
       PONTA PARA O CUIDADO COM A SUA PELE</h2>
 
     <div class="tecnica-home-wrapper">
-      <a href="<?=site_url()?>/">
+      <a data-animar href="<?=site_url()?>/dermatologia/dermatologia-cosmiatrica/toxina-botulinica/">
         <picture>
           <source srcset="<?=get_template_directory_URI()?>/img/webp/toxina.webp" type="image/webp"
             media="(max-width: 600px)" />
@@ -207,128 +208,93 @@ get_header(); ?>
             media="(max-width: 600px)" />
           <source srcset="<?=get_template_directory_URI()?>/img/webp/toxina@2x.webp" type="image/webp" />
           <source srcset="<?=get_template_directory_URI()?>/img/rsc/toxina@2x.jpg" type="image/jpg" />
-          <img src="<?=get_template_directory_URI()?>/img/rsc/toxina@2x.jpg" alt="Clínica Luciana Gulla" />
+          <img src="<?=get_template_directory_URI()?>/img/rsc/toxina@2x.jpg" alt="Toxina Botulínica" />
         </picture>
         <strong>Toxina Botulínica</strong>
       </a>
 
-      <a href="<?=site_url()?>/">
+      <a data-animar
+        href="<?=site_url()?>/dermatologia/dermatologia-cosmiatrica/preenchimento-facial-com-acido-hialuronico/">
         <picture>
-          <source srcset="<?=get_template_directory_URI()?>/img/webp/toxina.webp" type="image/webp"
+          <source srcset="<?=get_template_directory_URI()?>/img/webp/preenchimento.webp" type="image/webp"
             media="(max-width: 600px)" />
-          <source srcset="<?=get_template_directory_URI()?>/img/rsc/toxina.jpg" type="image/jpg"
+          <source srcset="<?=get_template_directory_URI()?>/img/rsc/preenchimento.jpg" type="image/jpg"
             media="(max-width: 600px)" />
-          <source srcset="<?=get_template_directory_URI()?>/img/webp/toxina@2x.webp" type="image/webp" />
-          <source srcset="<?=get_template_directory_URI()?>/img/rsc/toxina@2x.jpg" type="image/jpg" />
-          <img src="<?=get_template_directory_URI()?>/img/rsc/toxina@2x.jpg" alt="Clínica Luciana Gulla" />
+          <source srcset="<?=get_template_directory_URI()?>/img/webp/preenchimento@2x.webp" type="image/webp" />
+          <source srcset="<?=get_template_directory_URI()?>/img/rsc/preenchimento@2x.jpg" type="image/jpg" />
+          <img src="<?=get_template_directory_URI()?>/img/rsc/preenchimento@2x.jpg"
+            alt="Preenchimento com Ácido Hialurônico" />
         </picture>
-        <strong>Toxina Botulínica</strong>
+        <strong>Preenchimento com Ácido Hialurônico</strong>
       </a>
 
-      <a href="<?=site_url()?>/">
+      <a data-animar
+        href="<?=site_url()?>/dermatologia/dermatologia-cosmiatrica/ultrassom-micro-e-macrofocado-ultraformer-iii/">
         <picture>
-          <source srcset="<?=get_template_directory_URI()?>/img/webp/toxina.webp" type="image/webp"
+          <source srcset="<?=get_template_directory_URI()?>/img/webp/ultrassom.webp" type="image/webp"
             media="(max-width: 600px)" />
-          <source srcset="<?=get_template_directory_URI()?>/img/rsc/toxina.jpg" type="image/jpg"
+          <source srcset="<?=get_template_directory_URI()?>/img/rsc/ultrassom.jpg" type="image/jpg"
             media="(max-width: 600px)" />
-          <source srcset="<?=get_template_directory_URI()?>/img/webp/toxina@2x.webp" type="image/webp" />
-          <source srcset="<?=get_template_directory_URI()?>/img/rsc/toxina@2x.jpg" type="image/jpg" />
-          <img src="<?=get_template_directory_URI()?>/img/rsc/toxina@2x.jpg" alt="Clínica Luciana Gulla" />
+          <source srcset="<?=get_template_directory_URI()?>/img/webp/ultrassom@2x.webp" type="image/webp" />
+          <source srcset="<?=get_template_directory_URI()?>/img/rsc/ultrassom@2x.jpg" type="image/jpg" />
+          <img src="<?=get_template_directory_URI()?>/img/rsc/ultrassom@2x.jpg"
+            alt="Ultrassom Micro e Macrofocado - Ultraformer III" />
         </picture>
-        <strong>Toxina Botulínica</strong>
+        <strong>Ultrassom Micro e Macrofocado - Ultraformer III</strong>
       </a>
 
-      <a href="<?=site_url()?>/">
+      <a data-animar href="<?=site_url()?>/dermatologia/dermatologia-cosmiatrica/bioestimuladores-de-colageno/">
         <picture>
-          <source srcset="<?=get_template_directory_URI()?>/img/webp/toxina.webp" type="image/webp"
+          <source srcset="<?=get_template_directory_URI()?>/img/webp/bioestimuladores.webp" type="image/webp"
             media="(max-width: 600px)" />
-          <source srcset="<?=get_template_directory_URI()?>/img/rsc/toxina.jpg" type="image/jpg"
+          <source srcset="<?=get_template_directory_URI()?>/img/rsc/bioestimuladores.jpg" type="image/jpg"
             media="(max-width: 600px)" />
-          <source srcset="<?=get_template_directory_URI()?>/img/webp/toxina@2x.webp" type="image/webp" />
-          <source srcset="<?=get_template_directory_URI()?>/img/rsc/toxina@2x.jpg" type="image/jpg" />
-          <img src="<?=get_template_directory_URI()?>/img/rsc/toxina@2x.jpg" alt="Clínica Luciana Gulla" />
+          <source srcset="<?=get_template_directory_URI()?>/img/webp/bioestimuladores@2x.webp" type="image/webp" />
+          <source srcset="<?=get_template_directory_URI()?>/img/rsc/bioestimuladores@2x.jpg" type="image/jpg" />
+          <img src="<?=get_template_directory_URI()?>/img/rsc/bioestimuladores@2x.jpg"
+            alt="Bioestimuladores de Colágeno" />
         </picture>
-        <strong>Toxina Botulínica</strong>
+        <strong>Bioestimuladores de Colágeno</strong>
       </a>
 
-      <a href="<?=site_url()?>/">
+      <a data-animar href="<?=site_url()?>/dermatologia/dermatologia-cosmiatrica/endymed-microagulhamento-robotico/">
         <picture>
-          <source srcset="<?=get_template_directory_URI()?>/img/webp/toxina.webp" type="image/webp"
+          <source srcset="<?=get_template_directory_URI()?>/img/webp/microagulhamento.webp" type="image/webp"
             media="(max-width: 600px)" />
-          <source srcset="<?=get_template_directory_URI()?>/img/rsc/toxina.jpg" type="image/jpg"
+          <source srcset="<?=get_template_directory_URI()?>/img/rsc/microagulhamento.jpg" type="image/jpg"
             media="(max-width: 600px)" />
-          <source srcset="<?=get_template_directory_URI()?>/img/webp/toxina@2x.webp" type="image/webp" />
-          <source srcset="<?=get_template_directory_URI()?>/img/rsc/toxina@2x.jpg" type="image/jpg" />
-          <img src="<?=get_template_directory_URI()?>/img/rsc/toxina@2x.jpg" alt="Clínica Luciana Gulla" />
+          <source srcset="<?=get_template_directory_URI()?>/img/webp/microagulhamento@2x.webp" type="image/webp" />
+          <source srcset="<?=get_template_directory_URI()?>/img/rsc/microagulhamento@2x.jpg" type="image/jpg" />
+          <img src="<?=get_template_directory_URI()?>/img/rsc/microagulhamento@2x.jpg"
+            alt="Microagulhamento Robótico - EndyMed" />
         </picture>
-        <strong>Toxina Botulínica</strong>
+        <strong>Microagulhamento Robótico - EndyMed</strong>
       </a>
 
-      <a href="<?=site_url()?>/">
+      <a data-animar href="<?=site_url()?>/dermatologia/dermatologia-cosmiatrica/tratamentos-capilares/">
         <picture>
-          <source srcset="<?=get_template_directory_URI()?>/img/webp/toxina.webp" type="image/webp"
+          <source srcset="<?=get_template_directory_URI()?>/img/webp/intradermoterapia.webp" type="image/webp"
             media="(max-width: 600px)" />
-          <source srcset="<?=get_template_directory_URI()?>/img/rsc/toxina.jpg" type="image/jpg"
+          <source srcset="<?=get_template_directory_URI()?>/img/rsc/intradermoterapia.jpg" type="image/jpg"
             media="(max-width: 600px)" />
-          <source srcset="<?=get_template_directory_URI()?>/img/webp/toxina@2x.webp" type="image/webp" />
-          <source srcset="<?=get_template_directory_URI()?>/img/rsc/toxina@2x.jpg" type="image/jpg" />
-          <img src="<?=get_template_directory_URI()?>/img/rsc/toxina@2x.jpg" alt="Clínica Luciana Gulla" />
+          <source srcset="<?=get_template_directory_URI()?>/img/webp/intradermoterapia@2x.webp" type="image/webp" />
+          <source srcset="<?=get_template_directory_URI()?>/img/rsc/intradermoterapia@2x.jpg" type="image/jpg" />
+          <img src="<?=get_template_directory_URI()?>/img/rsc/intradermoterapia@2x.jpg"
+            alt="Intradermoterapia Capilar" />
         </picture>
-        <strong>Toxina Botulínica</strong>
+        <strong>Intradermoterapia Capilar</strong>
       </a>
     </div>
 
-    <a href="<?=site_url()?>/dermatologia-cosmiatrica" class="cta">Saiba mais</a>
+    <a data-animar href="<?=site_url()?>/dermatologia-cosmiatrica" class="cta">Saiba mais</a>
   </div>
 
-  <svg width="48.357" height="56.5" viewBox="0 0 48.357 56.5">
+  <svg data-object=".2" width="48.357" height="56.5" viewBox="0 0 48.357 56.5">
     <use xlink:href="#marca"></use>
   </svg>
 </section>
 
-<section class="midias-section">
-  <div class="container">
-    <div class="midias-cel"></div>
-
-    <div class="midias-txt">
-      <a href="https://instagram.com/dralucianagulla" target="_blank">
-        <svg width="32" height="32" viewBox="0 0 32 32">
-          <use xlink:href="#instagram"></use>
-        </svg>
-      </a>
-
-      <h2>Siga no
-        instagram</h2>
-
-      <a href="https://instagram.com/dralucianagulla" target="_blank">@dralucianagulla</a>
-    </div>
-
-    <div class="midias-insta">
-      <?php
-      $userid = "350695077";
-      $accessToken = "350695077.1677ed0.b78d7ef217054f6c9fe7a6bcd2e1eb9c";
-  
-      function fetchData($url){
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 20);
-        $result = curl_exec($ch);
-        curl_close($ch); 
-        return $result;
-      }
-  
-      $result = fetchData("https://api.instagram.com/v1/users/{$userid}/media/recent/?access_token={$accessToken}");
-      $result = json_decode($result);
-      
-      $xx = "1"; foreach ($result->data as $post): if ($xx < 7) { ?>
-      <a href="https://www.instagram.com/densita" target="_blank" class="insta-box">
-        <img src="<?= $post->images->standard_resolution->url ?>" alt="Instagram Luciana Gulla" />
-      </a>
-      <? $xx++; } endforeach ?>
-    </div>
-  </div>
-</section>
+<? include 'instagram.php' ?>
 
 <section class="estetica-home">
   <a href="<?=site_url()?>/estetica">
