@@ -31,8 +31,12 @@ window.open('<?=$linkpage?>', '_parent');
         <use xlink:href="#marca"></use>
       </svg>
       <h2>
-        <? $parent_title = get_the_title($post->post_parent);
-					echo $parent_title; ?>
+        <span><? $parent_title = get_the_title($post->post_parent);
+					echo $parent_title; ?></span>
+
+        <button class="menu-hamb">
+          <span></span>
+        </button>
       </h2>
 
       <div class="dermatologia-links">

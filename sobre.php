@@ -34,13 +34,13 @@ get_header(); ?>
 
     <div class="sobre-img">
       <picture data-animar>
-        <source srcset="<?=get_template_directory_URI()?>/img/webp/luciana.webp" type="image/webp"
+        <source srcset="<?=get_template_directory_URI()?>/img/webp/luciana_sobre.webp" type="image/webp"
           media="(max-width: 600px)" />
-        <source srcset="<?=get_template_directory_URI()?>/img/rsc/luciana.jpg" type="image/jpg"
+        <source srcset="<?=get_template_directory_URI()?>/img/rsc/luciana_sobre.jpg" type="image/jpg"
           media="(max-width: 600px)" />
-        <source srcset="<?=get_template_directory_URI()?>/img/webp/luciana@2x.webp" type="image/webp" />
-        <source srcset="<?=get_template_directory_URI()?>/img/rsc/luciana@2x.jpg" type="image/jpg" />
-        <img src="<?=get_template_directory_URI()?>/img/rsc/luciana@2x.jpg" alt="DRA. LUCIANA REIS GULLA ANHESINI" />
+        <source srcset="<?=get_template_directory_URI()?>/img/webp/luciana_sobre@2x.webp" type="image/webp" />
+        <source srcset="<?=get_template_directory_URI()?>/img/rsc/luciana_sobre@2x.jpg" type="image/jpg" />
+        <img src="<?=get_template_directory_URI()?>/img/rsc/luciana_sobre@2x.jpg" alt="DRA. LUCIANA REIS GULLA ANHESINI" />
       </picture>
     </div>
   </div>
@@ -108,13 +108,13 @@ get_header(); ?>
       </picture>
 
       <picture>
-        <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica1.webp" type="image/webp"
+        <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica4.webp" type="image/webp"
           media="(max-width: 600px)" />
-        <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica1.jpg" type="image/jpg"
+        <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica4.jpg" type="image/jpg"
           media="(max-width: 600px)" />
-        <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica1@2x.webp" type="image/webp" />
-        <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica1@2x.jpg" type="image/jpg" />
-        <img data-modal src="<?=get_template_directory_URI()?>/img/rsc/clinica1@2x.jpg" alt="Clínica Luciana Gulla" />
+        <source srcset="<?=get_template_directory_URI()?>/img/webp/clinica4@2x.webp" type="image/webp" />
+        <source srcset="<?=get_template_directory_URI()?>/img/rsc/clinica4@2x.jpg" type="image/jpg" />
+        <img data-modal src="<?=get_template_directory_URI()?>/img/rsc/clinica4@2x.jpg" alt="Clínica Luciana Gulla" />
       </picture>
     </div>
   </div>

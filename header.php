@@ -28,7 +28,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/png" href="<?=site_url()?>/img/favicon.png" />
+  <link rel="icon" type="image/png" href="<?=get_template_directory_URI()?>/img/favicon.png" />
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 

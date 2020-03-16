@@ -8,8 +8,15 @@
   }
 
   h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-transform: uppercase;
-    width: 50%;
+
+    > span {
+      width: 50%;
+      color: $pink;
+    }
   }
 
   .dermatologia-links {
